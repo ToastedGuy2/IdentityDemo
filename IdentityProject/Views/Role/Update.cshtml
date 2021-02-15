@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model IdentityRole
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Update</h1>
+<form method="post" asp-action="Update">
+    <div class="input-group">
+        <input name="roleName" class="form-control w-25" value="@Model.Name">
+        <span class="input-group-btn">
+            <button class="btn btn-info">Update Role</button>
+        </span>
+    </div>
+</form>
+
